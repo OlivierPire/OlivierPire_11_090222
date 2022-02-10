@@ -1,0 +1,14 @@
+.navigation {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+
+    a {
+        color: $color-1;
+    }
+
+    .nav-active {
+            border-bottom: 1px solid $color-1;
+    }
+}
