@@ -1,0 +1,61 @@
+.details {
+    max-width: 1240px;
+    margin: auto;
+    color: $color-1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .left-infos {
+
+        h2 {
+            margin-top: 4px;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            .tag {
+                font-size: 0.9em;
+                padding: 4px 20px 4px 20px;
+                background-color: $color-1;
+                border-radius: 10px;
+                color: white;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .right-infos {
+        display: flex;
+        flex-direction: column;
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            span {
+                max-width: 70px;
+                text-align: right;
+                margin-right: 7px;
+            }
+
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+
+        ul {
+            display: flex;
+            .emptyStars {
+                color: black;
+                font-size: 2em;
+            }
+        }
+    }
+
+}

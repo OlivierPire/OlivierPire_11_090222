@@ -1,7 +1,8 @@
 import React from 'react';
 import Banner from '../components/Banner';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
-import Logements from '../components/Logements';
+import Logements from '../components/Home/Logements';
 import '../styles/Home/index.scss'
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Header />
             <Banner />
             <Logements />
+            <Footer />
         </div>
     );
 };

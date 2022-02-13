@@ -1,4 +1,6 @@
 .logements {
+    max-width: 1240px;
+    margin: auto;
     border-radius: 25px;
     background: rgba(246, 246, 246, 1);
     margin-top: 40px;
@@ -8,4 +10,5 @@
     align-content: space-around;
     padding-left: 52px;
     padding-right: 52px;
+    padding-bottom: 52px;
 }

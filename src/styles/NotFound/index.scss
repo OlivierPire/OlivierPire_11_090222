@@ -1,0 +1,23 @@
+@import '../settings';
+
+.not-found {
+    color: $color-1;
+    max-width: 1240px;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+        font-size: 14em;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 2.1em;
+        margin-bottom: 100px;
+    }
+
+    .navToHome {
+        color: $color-1;
+        border-bottom: 1px solid $color-1;
+    }
+}
