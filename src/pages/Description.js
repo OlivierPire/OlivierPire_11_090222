@@ -5,24 +5,30 @@ import '../styles/Description/index.scss'
 import axios from 'axios';
 import Details from '../components/Description/Details';
 import Footer from '../components/Footer'
+import { useParams, useNavigate } from 'react-router-dom'
 
 
-const Description = ({}) => {
+const Description = () => {
     const [data, setData] = useState([]) 
+    const {id} = useParams()
+    const navigate = useNavigate()
     
-        useEffect(() => {
-            axios.get('./logements.json').then((res) => setData(res.data))
-        }, [])        
-        const url = window.location.href
-
-        console.log(window.location);
+    useEffect(() => {
+        axios.get('../logements.json').then((res) => {
+            if(!res.data.find(d => d.id === id)) {
+                navigate("/404")
+            } else {
+                setData(res.data)
+            }
+        })
+    }, [])
     
     return (
         <div>
             <Header />
             
             {data.map((data) => (
-                url.includes(data.id) ?
+                id === data.id ?
                 <Carousel key={data.id}
                 pictures={data.pictures}
                 alt={data.title}
@@ -30,7 +36,7 @@ const Description = ({}) => {
             ))}
 
             {data.map((data) => (
-                url.includes(data.id) ?
+                id === data.id ?
                 <Details key={data.id}
                 title={data.title}
                 description={data.description}

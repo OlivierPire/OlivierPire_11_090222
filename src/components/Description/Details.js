@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { AiFillStar } from 'react-icons/ai'
 
 const Details = ({ title, description, host, rating, location, equipments, tags }) => {
-    const [ fullStars, setStars ] = useState(0)
-    const [ emptyStars, setEmptyStars ] = useState(5)
-    const totalStars = 5;
+    const totalStars = [1, 2, 3, 4, 5];
 
-    rating > 1 ? console.log("oui") : console.log("non");
-    // rate > 1 ? console.log("oui") : console.log("non");
     return (
         <div className='details'>
             <div className='left-infos'>
@@ -26,11 +22,9 @@ const Details = ({ title, description, host, rating, location, equipments, tags 
                     <img src={host.picture} alt={host.name} />
                 </div>
                 <ul>
-                    <li><AiFillStar className='emptyStars'/></li>
-                    <li><AiFillStar className='emptyStars'/></li>
-                    <li><AiFillStar className='emptyStars'/></li>
-                    <li><AiFillStar className='emptyStars'/></li>
-                    <li><AiFillStar className='emptyStars'/></li>
+                    {totalStars.map((star) => (
+                        rating >= star ? <li><AiFillStar className='fullStars'/></li> : <li><AiFillStar className='emptyStars'/></li>
+                    ))}
                 </ul>
             </div>
         </div>
