@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className='home'>
             <Header />
-            <Banner />
+            <Banner src={"../../img/banner.png"} title={"Chez vous, partout et ailleurs"} classname={"banner"}/>
             <Logements />
             <Footer />
         </div>

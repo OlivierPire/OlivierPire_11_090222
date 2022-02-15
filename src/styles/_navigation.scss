@@ -11,4 +11,9 @@
     .nav-active {
             border-bottom: 1px solid $color-1;
     }
+
+    @media screen and (max-width: 870px) {
+        width: 150px;
+        font-size: 1em;
+    }
 }

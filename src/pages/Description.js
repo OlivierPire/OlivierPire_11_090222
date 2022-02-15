@@ -21,7 +21,7 @@ const Description = () => {
                 setData(res.data)
             }
         })
-    }, [])
+    }, [id, navigate])
     
     return (
         <div>
@@ -33,11 +33,12 @@ const Description = () => {
                 pictures={data.pictures}
                 alt={data.title}
                 /> : null
-            ))}
+                ))}
 
             {data.map((data) => (
                 id === data.id ?
                 <Details key={data.id}
+                id={data.id}
                 title={data.title}
                 description={data.description}
                 host={data.host}
@@ -46,8 +47,7 @@ const Description = () => {
                 equipments={data.equipments}
                 tags={data.tags}
                 /> : null
-            ))}
-
+                ))}
             <Footer />
         </div>
     );
