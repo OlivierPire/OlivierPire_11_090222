@@ -10,8 +10,6 @@ const Card = (props) => {
                 <img src={props.cover} alt="" />
             </Link>
         </div>
-
-
     );
 };
             

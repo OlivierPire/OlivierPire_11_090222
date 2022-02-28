@@ -2,13 +2,17 @@ import React from "react";
 import Dropdown from "../components/Dropdown";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 const About = () => {
 	return (
 		<div className="about">
 			<Header />
-			<Banner src={"../../img/bannerAbout.png"} title={""} classname={"banner banner-phone"}/>
+			<Banner
+				src={"../../img/bannerAbout.png"}
+				title={""}
+				classname={"banner banner-phone"}
+			/>
 			<Dropdown
 				title={"Fiabilité"}
 				text={

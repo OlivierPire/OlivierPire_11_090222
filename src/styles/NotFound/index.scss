@@ -20,4 +20,11 @@
         color: $color-1;
         border-bottom: 1px solid $color-1;
     }
+
+    @media screen and (max-width: 870px){
+        h1 {
+            font-size: 9em;
+        }
+    }
 }
+

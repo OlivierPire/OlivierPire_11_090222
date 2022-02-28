@@ -15,8 +15,8 @@ const Carousel = ({ pictures, alt }) => {
 
 	return (
 		<div className="carousel">
-			<IoChevronBackSharp onClick={prevSlide} className="arrow-left" />
-			<IoChevronForwardSharp onClick={nextSlide} className="arrow-right" />
+			<IoChevronBackSharp onClick={prevSlide} className={length === 1  ? "" : "arrow-left"} />
+			<IoChevronForwardSharp onClick={nextSlide} className={length === 1 ? "" : "arrow-right"} />
 			{pictures.map((picture, index) => {
 				return current === index && <img key={picture} src={picture} alt={alt} />;
 			})}

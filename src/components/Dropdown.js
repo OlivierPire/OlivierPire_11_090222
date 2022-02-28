@@ -6,14 +6,13 @@ const Dropdown = ({ title, text, className }) => {
 	const [style, setStyle] = useState("content-hidden");
 
 	const displayContent = () => {
-		console.log("click");
 		// eslint-disable-next-line no-unused-expressions
 		style === "content" ? setStyle("content-hidden") : setStyle("content");
 	};
 
 	return (
 		<div className={className}>
-			<h1  onClick={displayContent}>
+			<h1 onClick={displayContent}>
 				{title}{" "}
 				{style === "content-hidden" ? (
 					<IoChevronUpSharp className="chevron" />
