@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/OlivierPire_11_090222/static/css/main.7cae11d7.css",
+    "main.js": "/OlivierPire_11_090222/static/js/main.f49631fc.js",
+    "index.html": "/OlivierPire_11_090222/index.html",
+    "main.7cae11d7.css.map": "/OlivierPire_11_090222/static/css/main.7cae11d7.css.map",
+    "main.f49631fc.js.map": "/OlivierPire_11_090222/static/js/main.f49631fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cae11d7.css",
+    "static/js/main.f49631fc.js"
+  ]
+}
