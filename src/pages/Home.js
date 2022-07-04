@@ -10,7 +10,7 @@ const Home = () => {
 		<div className="home">
 			<Header />
 			<Banner
-				src={"../../img/banner.png"}
+				src={"./img/banner.png"}
 				title={"Chez vous, partout et ailleurs"}
 				classname={"banner"}
 			/>

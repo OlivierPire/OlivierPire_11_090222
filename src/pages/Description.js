@@ -13,7 +13,7 @@ const Description = () => {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		axios.get("../logements.json").then((res) => {
+		axios.get("./logements.json").then((res) => {
 			if (!res.data.find((d) => d.id === id)) {
 				navigate("/404");
 			} else {

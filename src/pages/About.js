@@ -9,7 +9,7 @@ const About = () => {
 		<div className="about">
 			<Header />
 			<Banner
-				src={"../../img/bannerAbout.png"}
+				src={"./img/bannerAbout.png"}
 				title={""}
 				classname={"banner banner-phone"}
 			/>
