@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/OlivierPire_11_090222/static/css/main.7cae11d7.css",
-    "main.js": "/OlivierPire_11_090222/static/js/main.9d500817.js",
+    "main.js": "/OlivierPire_11_090222/static/js/main.e707ba36.js",
     "index.html": "/OlivierPire_11_090222/index.html",
     "main.7cae11d7.css.map": "/OlivierPire_11_090222/static/css/main.7cae11d7.css.map",
-    "main.9d500817.js.map": "/OlivierPire_11_090222/static/js/main.9d500817.js.map"
+    "main.e707ba36.js.map": "/OlivierPire_11_090222/static/js/main.e707ba36.js.map"
   },
   "entrypoints": [
     "static/css/main.7cae11d7.css",
-    "static/js/main.9d500817.js"
+    "static/js/main.e707ba36.js"
   ]
 }
