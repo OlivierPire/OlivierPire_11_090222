@@ -7,14 +7,14 @@ import Description from "./pages/Description";
 
 const App = () => {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
 				<Route path="/" exact element={<Home />} />
 				<Route path="/a-propos" exact element={<About />} />
 				<Route path="/logements/:id" element={<Description />} />
 				<Route path="/*" element={<NotFound />} />
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	);
 };
 
